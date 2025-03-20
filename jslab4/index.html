@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <style>
+        .main{
+display: flex;
+width: 200px;
+flex-direction:column ;
+margin-left: 500px;
+        }
+        input , select ,button {
+            margin-bottom: 20px;
+            width: 200px;
+            height: 30px;
+        }
+
+    </style>
+    <style>
+        mi{
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin:0 ;
+            margin-bottom: 5px;
+          
+        }
+        div p{
+            margin: 0;
+            border: 1px solid black;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        
+          font-size: 20px;
+        }
+        #total{
+            font-size: 25px;
+        }
+        label p button{
+
+          font-size: 15px;
+        height: 100%;
+        width: 100%;
+          border: none;
+          background-color: red;
+          color: white;
+        
+        }
+        label p button:active{
+            opacity: 0.7;
+        }
+        .minus{
+            background-color: tomato;
+        }
+        .plus{
+            background-color: lightgreen;
+        }
+    </style>
+    <div class="main">
+        <h1>Отображение транзакций</h1>
+        <label for="amount">Сумма транзакции:</label>
+        <span id="pinj" style="color: red;"></span>
+<input type="text" id="amount">
+<label for="category">Категория:</label>
+<select id="category" required>
+    <option value="Income">Доход</option>
+    <option value="Expense">Расход</option>
+</select><br>
+<label for="description">Описание:</label>
+<span id="des" style="color: red;"></span>
+<input type="text" id="description" required><br>
+<button  id="butto">Добавить транзакцию</button>
+    </div>
+    <h1>Все транзакции</h1>
+    <label for="" class="min" id="min">
+        <div >
+    
+<p>Дата и Время</p>
+<p>Категория</p>
+<p>Краткое описание</p>
+<p>Действие</p>
+    </div>  
+    </label>
+  
+<p id="total">oбщая сумма</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
