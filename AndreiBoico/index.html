@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Галерея изображений</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Галерея изображений</h1>
+
+  <div class="controls">
+    <select id="filter">
+      <option value="all">Все</option>
+      <option value="forest">
+        природа</option>
+      <option value="nature">
+        лес</option>
+      <option value="bird">
+        город</option>
+    </select>
+
+    <select id="sort">
+      <option value="asc">Сортировать: A–Z</option>
+      <option value="desc">Сортировать: Z–A</option>
+    </select>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <div id="fullscreen" class="fullscreen">
+    <img id="fullscreen-img" src="" alt="fullscreen" />
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
